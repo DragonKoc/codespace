@@ -18,7 +18,7 @@ public class D2701 {
 
 }
 
-//result
+//results
 
 class Result {
 
