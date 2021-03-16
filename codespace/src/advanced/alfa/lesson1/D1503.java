@@ -26,5 +26,14 @@ public class D1503 {
         //increase cost
         crud.increaseCost(books, newCost);
 
+        //find author
+        crud.viewAuthor(books,"Author1");
+
+        //find publish
+        crud.viewPublish(books,"Publish2");
+
+        //find by year and after
+        crud.viewYear(books,2002);
+
     }
 }
