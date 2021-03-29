@@ -1,4 +1,4 @@
-package advanced.alfa.lesson1;
+package advanced.alfa.lesson1.work1;
 import advanced.alfa.lesson1.work1.Book;
 
 public class Runner {

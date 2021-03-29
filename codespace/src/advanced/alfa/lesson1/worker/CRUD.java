@@ -1,10 +1,6 @@
 package advanced.alfa.lesson1.worker;
 import advanced.alfa.lesson1.work1.Book;
 
-import java.sql.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class CRUD {
 
@@ -63,6 +59,7 @@ public class CRUD {
             System.out.println("Нет книг позже данного года выпуска");
     }
 
+    //TODO вернуть массив книг по критерию
 
 
 

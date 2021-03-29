@@ -4,8 +4,10 @@ import advanced.alfa.lesson1.work1.Book;
 import advanced.alfa.lesson1.worker.CRUD;
 import java.util.Scanner;
 
+//Практическая работа 2-1.pdf
 
-public class D1503 {
+
+public class Task21 {
 
     public static void main(String[] args) {
     //    Runner runner = new Runner();
@@ -23,9 +25,11 @@ public class D1503 {
         //create book
         Book[] books = crud.createArrayBook(countBooks);
 
+        //практическая работа 1-4
         //increase cost
         crud.increaseCost(books, newCost);
 
+        //практическая работа 1-5
         //find author
         crud.viewAuthor(books,"Author1");
 
