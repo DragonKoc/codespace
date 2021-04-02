@@ -8,9 +8,10 @@ public class Runner {
 
         for (int i = 0; i<= trainSchedule.getTrains().length - 1; i++) {
             String day = "MONDAY";
-            
+// чтобы создать массив в цикле или проще было бы использовать Scanner
 //            alltrain[i] = trainSchedule.addTrain(1,"Kiev" + i,"Lvov" + i,"15:0" + i , "21:0" + i, DaysofWeek.valueOf(day.toUpperCase()).nextDay());
 
+            //создание массива с использованием рандомного дня
             alltrain = new Train[]{
                     new Train(1,"Kiev","Lvov","15:00" , "21:00", DaysofWeek.randomDay()),
                     new Train(2,"Kiev","Minsk","13:00" , "23:00", DaysofWeek.randomDay()),
@@ -22,8 +23,10 @@ public class Runner {
             };
         }
 
+        //метод printTrains(), который отображает в консоль все существующие поезда.
         trainSchedule.printTrains(alltrain);
 
+        //метод searchTrains(...),  который отображает в консоль поезда, идущие до заданной станции  прибытияи в заданный день недели.
         trainSchedule.searchTrains( "London", DaysofWeek.FRIDAY, alltrain);
 
     }
