@@ -10,10 +10,10 @@ public class Runner {
 
         for (Shape f : figures
         ) {
-            System.out.println(f.toString());
+            System.out.println(f/*.toString()*/);
         }
 
-        System.out.println("Вчисление общей площади всех фигур: " + allSquare(figures));
+        System.out.printf("Вчисление общей площади всех фигур: %.2f\n" , allSquare(figures));
         System.out.println("Вчисление общей площади всех кругов: " + allSquareByFigure(figures, "circle"));
         System.out.println("Вчисление общей площади всех треугольников: " + allSquareByFigure(figures, "triangle"));
         System.out.println("Вчисление общей площади всех квадратов: " + allSquareByFigure(figures, "rentagle"));

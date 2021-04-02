@@ -1,6 +1,5 @@
 package advanced.alfa.lesson4.work1;
 
-import java.util.Comparator;
 
 abstract public class Shape implements Drawable, Comparable <Shape>, Cloneable {
     public String color;
@@ -35,15 +34,12 @@ abstract public class Shape implements Drawable, Comparable <Shape>, Cloneable {
     }
 
     @Override
-    public int compareTo (Shape another) {
-        if (this.calcArea () == another.calcArea () ){
-          //  System.out.println("площадь обьектов " + this.getClass().getSimpleName() + " равна");
+    public int compareTo (Shape other) {
+        if (this.calcArea () == other.calcArea () ){
             return 0;
-        } else if (this.calcArea () < another.calcArea () ){
-          //  System.out.println("площадь второго обьекта " + this.getClass().getSimpleName() + " больше");
+        } else if (this.calcArea () < other.calcArea () ){
             return -1;
         } else {
-         //   System.out.println("площадь второго обьекта " + this.getClass().getSimpleName() + "  меньше");
             return 1;
         }
     }
