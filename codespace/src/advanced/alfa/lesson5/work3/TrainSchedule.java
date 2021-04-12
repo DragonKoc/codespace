@@ -2,7 +2,9 @@ package advanced.alfa.lesson5.work3;
 
 public class TrainSchedule {
 
-    Train[] trains;
+    private Train[] trains;
+
+    private int cnt = 0;
 
     public TrainSchedule(int cnttrains) {
         this.trains = new Train[cnttrains];
@@ -43,10 +45,7 @@ public class TrainSchedule {
         for (int i = 0; i <arraytrains.length; i++) {
 
             if (arraytrains[i].getStationArrival().equals(stationArrival) && arraytrains[i].getDays().equals(day)) {
-//
                 System.out.println ("Yeap! this train is\n" + arraytrains[i]);
-            }else {
-//                System.err.println ("Nope!");
             }
         }
     }

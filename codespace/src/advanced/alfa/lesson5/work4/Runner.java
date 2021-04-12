@@ -54,6 +54,10 @@ public class Runner {
 
         System.out.println(i5 == i6);
 
+        System.out.println( sum(1,3.3d));
 
+    }
+    private double sum(Integer i, Double f){
+        return Double.valueOf(i+f);
     }
 }

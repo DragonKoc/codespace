@@ -8,7 +8,7 @@ public class Runner {
 
         for (int i = 0; i<= trainSchedule.getTrains().length - 1; i++) {
             String day = "MONDAY";
-// чтобы создать массив в цикле или проще было бы использовать Scanner
+//            чтобы создать массив в цикле или проще было бы использовать Scanner
 //            alltrain[i] = trainSchedule.addTrain(1,"Kiev" + i,"Lvov" + i,"15:0" + i , "21:0" + i, DaysofWeek.valueOf(day.toUpperCase()).nextDay());
 
             //создание массива с использованием рандомного дня
