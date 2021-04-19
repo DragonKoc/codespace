@@ -8,10 +8,10 @@ public class Task29 {
         //new advanced.alfa.lesson9.work1.Runner().run();
 
         //work2
-        //new advanced.alfa.lesson9.work2.Runner().run();
+        new advanced.alfa.lesson9.work2.Runner().run();
 
         //work3
-        new advanced.alfa.lesson9.work3.Runner().run();
+        //new advanced.alfa.lesson9.work3.Runner().run();
     }
 
 }

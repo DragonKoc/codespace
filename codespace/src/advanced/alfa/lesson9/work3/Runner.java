@@ -1,6 +1,5 @@
 package advanced.alfa.lesson9.work3;
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Runner {
