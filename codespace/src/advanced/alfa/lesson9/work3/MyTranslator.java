@@ -21,7 +21,7 @@ public class MyTranslator {
     public String translate (String engString){
         String[] engArrayString = engString.split( " " );
         String[] rusArrayString = new String[engArrayString.length] ;
-        String rusString = "";
+        String perevod = "";
         for (int i = 0; i <engArrayString.length ; i++) {
             if (engrus.get (engArrayString[i]) != null ){
                 rusArrayString[i] = engrus.get (engArrayString[i]);
@@ -30,9 +30,9 @@ public class MyTranslator {
             }
         }
         for (int i = 0; i <rusArrayString.length ; i++) {
-            rusString += rusArrayString[i]+" ";
+            perevod += rusArrayString[i]+" ";
         }
-        return rusString ;
+        return perevod ;
     }
 
 }
