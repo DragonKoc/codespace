@@ -26,8 +26,8 @@ public class Runner {
         ListIterator<String> listIterator = listLink.listIterator();
 
         while (listIterator.hasNext() && stringListIterator.hasPrevious()) {
-            listIterator.next();
             listIterator.add(stringListIterator.previous());
+            listIterator.next();
         }
 
         System.out.println("new listLink\n" + listLink);
