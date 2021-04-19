@@ -11,15 +11,19 @@ public class MyTestClass {
     private static String myTestClassString = "myTestClassString";
 
     void test(){
-        System.out.println(myTestClassString +" test MyTestClass");
-        new MyStaticNested().method();
-        System.out.println(new MyInner().myInner);
-        new MyInner().method();
+        System.out.println(myTestClassString +" MyTestClass (method)");
+        MyStaticNested staticNested = new MyStaticNested();
+        MyInner myInner = new MyInner();
+        staticNested.method();
+        myInner.method();
+        System.out.println(myTestClassString + " (variable)");
+        System.out.println(staticNested.myStaticNested + " (variable)");
+        System.out.println(myInner.myInner + " (variable)");
     }
 
     static class MyStaticNested{
         private String myStaticNested = "myStaticNested";
-        void method(){ System.out.println (myTestClassString + " " + myStaticNested );
+        void method(){System.out.println (myTestClassString + " " + myStaticNested +  " (method)");
         }
     }
 
@@ -30,7 +34,7 @@ public class MyTestClass {
                 private String myLocal = "myLocal";
             }
             MyLocal myLocal = new MyLocal();
-            System.out.println (MyTestClass.myTestClassString + " " + myLocal.myLocal);
+            System.out.println (MyTestClass.myTestClassString + " " + myLocal.myLocal + " (method)");
         }
     }
 }
