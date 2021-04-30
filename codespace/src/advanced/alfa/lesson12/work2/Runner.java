@@ -79,7 +79,6 @@ public class Runner {
         personList.stream()
                 .filter(person -> person.getAge() >= 18 && person.getAge() <= 27)
                 .filter(person -> person.getGender().equals(MALE))
-                .distinct()
                 .forEach(System.out::println);
 
         //код определения среднего возраста женщин
