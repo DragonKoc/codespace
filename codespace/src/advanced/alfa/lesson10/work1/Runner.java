@@ -1,21 +1,26 @@
 package advanced.alfa.lesson10.work1;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Arrays;
-
 public class Runner {
-    public void run() {
-        File file = new File("/Users/dragon/Dev/Github/codespace/codespace/src/advanced/alfa/lesson10/theory/");
-        try {
-            if (file.list() != null) {
-                System.out.println("Файлы в директории: " + file);
-                System.out.println(Arrays.toString(file.list()));
-            } else {
-                throw new IOException("Неверный путь к директории");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void run(){
+        //1
+        MyPhoneBook myPhoneBook = new MyPhoneBook();
+        myPhoneBook.addPhoneNumber("Ivan","+38(066)1234567");
+        myPhoneBook.addPhoneNumber("Peter","+38(096)1234567");
+        myPhoneBook.addPhoneNumber("Alex","+38(063)1234567");
+        myPhoneBook.addPhoneNumber("Helen","+38(067)1234567");
+        myPhoneBook.addPhoneNumber("Maria","+38(068)1234567");
+        myPhoneBook.addPhoneNumber("Yehor","+38(093)1234567");
+        myPhoneBook.addPhoneNumber("Lili","+38(061)1234567");
+        myPhoneBook.addPhoneNumber("Koc","+38(099)1234567");
+        myPhoneBook.addPhoneNumber("Vasya","+38(050)1234567");
+        myPhoneBook.addPhoneNumber("Ktoto","+38(055)1234567");
+//        myPhoneBook.printPhoneBook();
+
+        //2
+        myPhoneBook.sortByName();
+        myPhoneBook.printPhoneBook();
+        System.out.println();
+        myPhoneBook.sortByPhone();
+        myPhoneBook.printPhoneBook();
     }
 }
