@@ -14,8 +14,13 @@ public class Task34 {
 //        new advanced.alfa.lesson19_20.work3.Runner().run();
 
         //1-4
-
+//        new advanced.alfa.lesson19_20.work4.Runner().run();
 
         //1-5
+//        new advanced.alfa.lesson19_20.work5.Runner().run();
+
+        //1-6
+        new advanced.alfa.lesson19_20.work6.Runner().run();
+
     }
 }
