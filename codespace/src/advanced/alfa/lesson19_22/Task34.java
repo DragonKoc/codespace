@@ -17,10 +17,10 @@ public class Task34 {
 //        new advanced.alfa.lesson19_20.work4.Runner().run();
 
         //1-5
-//        new advanced.alfa.lesson19_20.work5.Runner().run();
+        new advanced.alfa.lesson19_22.work5.Runner().run();
 
         //1-6
-        new advanced.alfa.lesson19_22.work6.Runner().run();
+//        new advanced.alfa.lesson19_22.work6.Runner().run();
 
     }
 }
